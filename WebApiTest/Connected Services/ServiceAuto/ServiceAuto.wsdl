@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceAuto" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50874/ServiceAuto.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50874/ServiceAuto.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50874/ServiceAuto.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfDb" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceAuto_GetAuto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAuto_GetAuto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAuto_InsertAuto_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAuto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAuto_InsertAuto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAuto_UpdateAuto_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAuto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAuto_UpdateAuto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAuto_DeleteAuto_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAuto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAuto_DeleteAuto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAutoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceAuto">
+    <wsdl:operation name="GetAuto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAuto/GetAuto" message="tns:IServiceAuto_GetAuto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAuto/GetAutoResponse" message="tns:IServiceAuto_GetAuto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAuto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAuto/InsertAuto" message="tns:IServiceAuto_InsertAuto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAuto/InsertAutoResponse" message="tns:IServiceAuto_InsertAuto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAuto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAuto/UpdateAuto" message="tns:IServiceAuto_UpdateAuto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAuto/UpdateAutoResponse" message="tns:IServiceAuto_UpdateAuto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAuto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAuto/DeleteAuto" message="tns:IServiceAuto_DeleteAuto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAuto/DeleteAutoResponse" message="tns:IServiceAuto_DeleteAuto_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceAuto" type="tns:IServiceAuto">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAuto">
+      <soap:operation soapAction="http://tempuri.org/IServiceAuto/GetAuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAuto">
+      <soap:operation soapAction="http://tempuri.org/IServiceAuto/InsertAuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAuto">
+      <soap:operation soapAction="http://tempuri.org/IServiceAuto/UpdateAuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAuto">
+      <soap:operation soapAction="http://tempuri.org/IServiceAuto/DeleteAuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceAuto">
+    <wsdl:port name="BasicHttpBinding_IServiceAuto" binding="tns:BasicHttpBinding_IServiceAuto">
+      <soap:address location="http://localhost:50874/ServiceAuto.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

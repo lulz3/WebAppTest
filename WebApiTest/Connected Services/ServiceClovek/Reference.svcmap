@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fedb4443-55d1-4e19-a310-c4597dee187f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50874/ServiceClovek.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceClovek.xsd" MetadataType="Schema" ID="ec6f5299-42d5-4536-9185-513479be5199" SourceId="1" SourceUrl="http://localhost:50874/ServiceClovek.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceClovek.wsdl" MetadataType="Wsdl" ID="de5d162e-f206-4f36-8cc0-1056e642ea16" SourceId="1" SourceUrl="http://localhost:50874/ServiceClovek.svc?wsdl" />
+    <MetadataFile FileName="ServiceClovek1.xsd" MetadataType="Schema" ID="76e27a7a-284b-4b16-b2a2-2897ef9fa78f" SourceId="1" SourceUrl="http://localhost:50874/ServiceClovek.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceClovek.disco" MetadataType="Disco" ID="74bd7bec-d237-4c7a-84df-9a02c128a872" SourceId="1" SourceUrl="http://localhost:50874/ServiceClovek.svc?disco" />
+    <MetadataFile FileName="ServiceClovek2.xsd" MetadataType="Schema" ID="44bafff5-157b-428e-94bb-d16bea443a71" SourceId="1" SourceUrl="http://localhost:50874/ServiceClovek.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

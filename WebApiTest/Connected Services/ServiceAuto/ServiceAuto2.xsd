@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfDb" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfDb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="AutoResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Values" nillable="true" type="tns:ArrayOfAutoContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AutoResult" nillable="true" type="tns:AutoResult" />
+  <xs:complexType name="ArrayOfAutoContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AutoContract" nillable="true" type="tns:AutoContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAutoContract" nillable="true" type="tns:ArrayOfAutoContract" />
+  <xs:complexType name="AutoContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_Clovek" type="xs:int" />
+      <xs:element minOccurs="0" name="Nazev" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AutoContract" nillable="true" type="tns:AutoContract" />
+  <xs:complexType name="Auto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_Clovek" type="xs:int" />
+      <xs:element minOccurs="0" name="Nazev" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Auto" nillable="true" type="tns:Auto" />
+</xs:schema>
